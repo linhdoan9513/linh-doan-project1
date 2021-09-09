@@ -28,13 +28,16 @@
 
         .contactForm {
             background-color: white;
-            width: 60%;
             box-shadow: -15px 15px $yellow;
             margin-bottom: 100px;
             position: relative;
             top: -150px;
             z-index: 99;
+<<<<<<< HEAD
             padding: 0 50px 50px 50px 50px;
+=======
+            max-width: 60%;
+>>>>>>> gh-pages
         }
 
         .contactSection {
