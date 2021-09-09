@@ -19,7 +19,6 @@
 }
 
 .contactMain {
-    
     background-color: $offWhite;
     .wrapper {
         display: flex; 
@@ -34,6 +33,7 @@
             position: relative;
             top: -150px;
             z-index: 99;
+            max-width: 60%;
         }
 
         .contactSection {
