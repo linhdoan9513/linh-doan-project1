@@ -1,0 +1,50 @@
+@import '_setup';
+@import 'vars';
+@import '_globalStyle';
+@import '_blog';
+
+.contactHeader {
+    background-image: url("../assets/contact-header-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.contactStyling {
+    input[type=text],
+    input[type=email],
+    textarea {
+        background: white;
+    }
+}
+
+.contactMain {
+    background-color: $offWhite;
+    .wrapper {
+        display: flex; 
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .contactForm {
+            background-color: white;
+            width: 60%;
+            box-shadow: -15px 15px $yellow;
+            margin-bottom: 100px;
+            position: relative;
+            top: -150px;
+            z-index: 99;
+        }
+
+        .contactSection {
+            width: 40%;
+            .fab {
+                color: $green;
+                padding-right: 20px;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+

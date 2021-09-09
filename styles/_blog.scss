@@ -1,0 +1,130 @@
+@import '_setup';
+@import 'vars';
+@import '_globalStyle';
+
+.blogMain {
+    margin: 0;
+    padding: 0;
+    background-color: $offWhite;
+    section {
+        display: grid;
+        grid-template-columns: 35% calc(65% - 100px);
+        column-gap: 100px;
+        aside {
+            margin-top: 100px;
+            height: 40%;
+            display: grid; 
+            grid-template-rows: 30px 300px 400px;
+            grid-template-columns: 100px 200px 130px 20px;
+        }
+
+        .imageContainer {
+            grid-area: 1 / 1 / 2 / 4;
+            z-index: 2;
+        }
+
+        .textContainer {
+            grid-row-start: 2;
+            grid-row-end: -1;
+            grid-column-start: 2;
+            grid-column-end: -1;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 40% 60%;
+            row-gap: 50px;
+        }
+
+        .textWrap {
+            padding: 30px;
+            grid-row: 2 / 4;
+            span {
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .post {
+                list-style-type: none;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            .post h3 {
+                margin-top: 30px;
+            }
+
+            .post li::before {
+                content: "\2022";
+                color: $green;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1rem;
+            }
+        }
+
+        article {
+            .headerBox {
+                box-shadow: -15px 15px $yellow;
+                position: relative;
+                top: -150px;
+                left: 10px;
+            }
+
+            .mission {
+                position: relative;
+                top: -50px;
+            }
+
+            .borderStyling {
+                box-shadow: -5px 5px $yellow;
+                margin-bottom: 50px;
+            }
+            
+            h4 {
+                font-size: 0.9rem;
+                font-weight: 300;
+                font-family: $roboto;
+                font-style: italic;
+                margin: 0;
+                padding-bottom: 50px;
+            }
+
+            h4 span {
+                font-weight: bold;
+            }
+
+            p {
+                padding: 10px 0;
+            }
+
+            .comment h3 {
+                padding-bottom: 20px;
+            }
+
+            .individualComment {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: 50px;
+            }
+
+            .commentImage {
+                width: 250px; 
+                height: auto;
+                padding-right: 50px;
+            }
+        }
+    }
+}
+
+.topInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+        width: 45%;
+    }
+}
+

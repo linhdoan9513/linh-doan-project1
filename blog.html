@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Blog</title>
+</head>
+<body>
+	<header class="blogHeader">
+        <div class="navStyling">
+            <nav class="wrapper"> 
+                <input type="checkbox" id="sliding-menu">
+                <label for="sliding-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+                <h1>Planted</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="wrapper">Blog</h2>
+    </header>
+    <main class="blogMain">
+		<section>
+			<aside>
+				<div class="imageContainer">
+					<img src="./assets/side-bar-image.jpg" alt="picture of a window">
+				</div>
+				<div class="textContainer">
+					<div class="textWrap">
+						<h3>About Planted</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing adipisicing.<span>Find out more.</span></p>
+						<ul class="post">
+							<h3>Recent Posts</h3>
+							<li>Lorem ipsum dolor sit.</li>
+							<li>Lorem ipsum dolor sit.</li>
+							<li>Lorem ipsum dolor sit.</li>
+							<li>Lorem ipsum dolor sit.</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<article>
+				<div class="borderStyling">
+					<img class="headerBox" src="./assets/post-image.jpg" alt="picture of potted plants">
+					<div class="wrapper mission">
+						<h3>Our Mission at Planted</h3>
+						<h4>Monday January 21th,2019 by <span>Yoursa</span></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus rem blanditiis quod optio quasi! Sit nam aliquid doloremque natus harum et eius sed repellat quia unde sapiente quod delectus ratione, corporis, culpa suscipit provident assumenda atque soluta repellendus nulla enim! Consequatur eius ut dignissimos ipsam commodi quos voluptatum esse enim!</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi laboriosam rem laudantium, ipsa blanditiis. Numquam, fuga? Laborum aut deleniti asperiores, magni qui dignissimos doloribus modi quae perferendis hic neque amet commodi voluptate magnam quos ea quia architecto porro quibusdam?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, suscipit velit eos harum officia voluptates non dignissimos illum magnam laudantium cumque saepe doloremque, itaque eligendi aut perferendis qui beatae quibusdam rem provident dolore dolor dicta, quisquam consequuntur? Vero veritatis soluta ducimus, nostrum at qui nihil expedita autem harum illo tempore dolorem a porro? Natus itaque dolore ratione sapiente repudiandae reiciendis sint sed, aliquam atque vel asperiores fuga fugiat consectetur, quaerat autem? Cumque fugit magni obcaecati eligendi blanditiis neque, eveniet corporis nostrum quibusdam magnam! Dolorem fugiat doloribus eius vel harum adipisci aperiam, ea id unde incidunt ducimus magni quibusdam magnam iure.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi laboriosam rem laudantium, ipsa blanditiis. Numquam, fuga? Laborum aut deleniti asperiores, magni qui dignissimos doloribus modi quae perferendis hic neque amet commodi voluptate magnam quos ea quia architecto porro quibusdam.</p>
+					</div>
+				</div>
+				<div class="wrapper comment">
+					<h3>Comments:</h3>
+					<div class="individualComment">
+						<div class="commentImage">
+							<img src="./assets/profile-image.jpg" alt="picture of customer image 1">
+						</div>
+						<div class="commentText">
+							<h5>Tuesday October 9th,2018 by Jeremy</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea officia fugiat veritatis eius, quaerat, fugit eum culpa ipsa iure veniam nihil. Obcaecati iste temporibus blanditiis maiores qui? Magnam, dignissimos libero.</p>
+						</div>
+					</div>
+					<div class="individualComment">
+						<div class="commentImage">
+							<img src="./assets/profile-image-2.jpg" alt="picture of customer image 2">
+						</div>
+						<div class="commentText">
+							<h5>Tuesday October 10th,2018 by Jeremy</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea officia fugiat veritatis eius, quaerat, fugit eum culpa ipsa iure veniam nihil. Obcaecati iste temporibus blanditiis maiores qui? Magnam, dignissimos libero.</p>
+						</div>
+					</div>
+				</div>
+			<form class="wrapper" id="userForm" action="">
+				<fieldset class="wrapper">
+					<legend class="hidden">Your Message:</legend>
+					<div>
+						<div class="topInput">
+							<div>
+								<label for="fullName" class="hidden">Full name:</label>
+								<input type="text" id="fullName" name="fullName" placeholder="Name">
+							</div>
+							<div>
+								<label for="email" class="hidden">Email:</label>
+								<input type="email" id="email" name="email" placeholder="Email address">
+							</div>
+							
+						</div>
+						<label for="messageBox" class="hidden">Comment:</label>
+						<textarea placeholder="Comment:" rows="5" cols="50" name="messageBox" form="userForm"></textarea>
+						<input type="submit" value="Post Comment">
+					</div>
+				</fieldset>
+			</form>
+			</article>
+		</section>
+		<footer>
+            <p>Copyright <i class="far fa-copyright"></i> 2019 HackerYou</p>
+        </footer>
+	</main>
+</body>
+</html>

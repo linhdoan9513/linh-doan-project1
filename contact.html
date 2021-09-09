@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="contactHeader">
+        <div class="navStyling">
+            <nav class="wrapper"> 
+                <input type="checkbox" id="sliding-menu">
+                <label for="sliding-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+                <h1>Planted</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="wrapper">Get in <span>Touch</span></h2>
+    </header>
+    <main class="contactMain">
+        <section class="wrapper">
+            <form class="contactForm" id="userForm" action="">
+                <fieldset class="wrapper">
+                    <legend class="hidden">Your Message:</legend>
+                    <div class="contactStyling">
+                        <div class="topInput">
+                            <div>
+                                <label for="fullName" class="hidden">Full name:</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Name">
+                            </div>
+                            <div>
+                                <label for="email" class="hidden">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email address">
+                            </div>
+                        </div>
+                        <label for="messageBox" class="hidden">Submit</label>
+                        <textarea placeholder="Message:" rows="8" cols="60" name="messageBox" form="userForm"></textarea>
+                        <input type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
+        <div class="contactSection">
+            <div class="socialMedia">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <h4>info@email.com</h4>
+            <p>123-456-7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+        </div>
+        </section>
+    </main>
+     <footer>
+        <p>Copyright <i class="far fa-copyright"></i> 2019 HackerYou</p>
+    </footer>
+</body>
+</html>

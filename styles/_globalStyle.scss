@@ -1,0 +1,125 @@
+@import '_setup';
+@import 'vars';
+
+html {
+    font-family: $josefinSans;
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto; 
+    width: 90%;
+}
+
+p {
+    font-family: $roboto;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: $black;
+    line-height: 32px;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    background-color: $green;
+    color: white;
+}
+
+h1 {
+    color: $offWhite;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-right: 50px;
+}
+
+h2 {
+    color: $yellow;
+    font-size: 2.5rem;
+    padding-top: 15%;
+}
+
+h2 span {
+    display: block;
+}
+
+h3 { 
+    font-size: 1.8rem;
+    color: $black;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+nav {
+    overflow: hidden;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+input[type=submit],
+input[type=value] {
+    font-family: $josefinSans;
+    border: none;
+    border-bottom: 2px solid $green;
+    background-color: $offWhite;
+    padding: 20px;
+}
+
+textarea {    
+    border: 2px solid $green;
+    resize:none;
+    width: 100%;
+}
+
+input[type=submit] {
+    background: $green;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 5px 0;
+    margin-top: 30px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+form {
+    padding-bottom: 50px;
+}
+
+fieldset {
+    border: none;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.navStyling {
+    background-color: black;
+}
+
+
+footer {
+    background-color: $black;
+    text-align: center;
+
+    p {
+        color: white;
+    }
+}
