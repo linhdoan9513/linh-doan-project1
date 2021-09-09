@@ -19,6 +19,7 @@
 }
 
 .contactMain {
+    
     background-color: $offWhite;
     .wrapper {
         display: flex; 
@@ -28,7 +29,6 @@
 
         .contactForm {
             background-color: white;
-            width: 60%;
             box-shadow: -15px 15px $yellow;
             margin-bottom: 100px;
             position: relative;
