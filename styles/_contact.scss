@@ -1,6 +1,6 @@
 @import '_setup';
 @import 'vars';
-@import '_globalStyle';
+// @import '_globalStyle';
 @import '_blog';
 
 .contactHeader {
@@ -34,6 +34,7 @@
             position: relative;
             top: -150px;
             z-index: 99;
+            padding: 0 50px 50px 50px 50px;
         }
 
         .contactSection {
