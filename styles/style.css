@@ -854,6 +854,7 @@ input[type=submit] {
 }
 
 form {
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
@@ -1494,379 +1495,6 @@ body {
 }
 
 html {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 125%;
-  line-height: 1.5;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: #2C2C2C;
-  line-height: 32px;
-}
-
-button {
-  padding: 10px 30px;
-  border: none;
-  background-color: #0E902D;
-  color: white;
-}
-
-h1 {
-  color: #f0efed;
-  font-size: 2rem;
-  font-weight: 400;
-  padding-right: 50px;
-}
-
-h2 {
-  color: #F8E71C;
-  font-size: 2.5rem;
-  padding-top: 15%;
-}
-
-h2 span {
-  display: block;
-}
-
-h3 {
-  font-size: 1.8rem;
-  color: #2C2C2C;
-}
-
-h4 {
-  font-size: 1.4rem;
-  margin: 20px 0;
-}
-
-nav {
-  overflow: hidden;
-}
-
-input[type=text],
-input[type=email],
-textarea,
-input[type=submit],
-input[type=value] {
-  font-family: "Josefin Sans", sans-serif;
-  border: none;
-  border-bottom: 2px solid #0E902D;
-  background-color: #f0efed;
-  padding: 20px;
-}
-
-textarea {
-  border: 2px solid #0E902D;
-  resize: none;
-  width: 100%;
-}
-
-input[type=submit] {
-  background: #0E902D;
-  color: white;
-  font-size: 1rem;
-  border: none;
-  padding: 5px 0;
-  margin-top: 30px;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-form {
-  padding-bottom: 50px;
-}
-
-fieldset {
-  border: none;
-}
-fieldset div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.navStyling {
-  background-color: black;
-}
-
-footer {
-  background-color: #2C2C2C;
-  text-align: center;
-}
-footer p {
-  color: white;
-}
-
-html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-article, aside, footer, header, nav, section {
-  display: block;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-figcaption, figure, main {
-  display: block;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-b, strong {
-  font-weight: inherit;
-}
-
-b, strong {
-  font-weight: bolder;
-}
-
-code, kbd, samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-audio, video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-img {
-  border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-button, input, optgroup, select, textarea {
-  font-family: sans-serif;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-}
-
-button, input {
-  overflow: visible;
-}
-
-button, select {
-  text-transform: none;
-}
-
-button, html [type=button], [type=reset], [type=submit] {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
-progress {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-textarea {
-  overflow: auto;
-}
-
-[type=checkbox], [type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-details, menu {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-canvas {
-  display: inline-block;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -2215,6 +1843,7 @@ input[type=submit] {
 }
 
 form {
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
@@ -2372,7 +2001,6 @@ footer p {
 }
 .contactMain .wrapper .contactForm {
   background-color: white;
-  width: 60%;
   box-shadow: -15px 15px #F8E71C;
   margin-bottom: 100px;
   position: relative;
@@ -2737,6 +2365,7 @@ input[type=submit] {
 }
 
 form {
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
@@ -3363,6 +2992,7 @@ input[type=submit] {
 }
 
 form {
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
@@ -3755,11 +3385,11 @@ section.feature .featureContainer2 .containerText {
     padding-right: 20px;
   }
 
-  .blogMain .topInput {
+  fmax .blogMain .topInput {
     display: flex;
     flex-direction: column;
   }
-  .blogMain .topInput div {
+  fmax .blogMain .topInput div {
     width: 100%;
   }
 
