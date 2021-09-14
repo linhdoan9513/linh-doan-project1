@@ -167,41 +167,43 @@ section.gallery {
 
 @media screen and (max-width: 940px) {
     // START OF MEDIA QUERY FOR NAV //
-    .menu-btn {
-        display: block;
-    }
 
     nav {
         display: block;
         height: 90px;
+
+        .hamburger {
+            display: block;
+        }
     }
 
-    nav ul {
+    nav .menuList {
         position: fixed;
-        z-index: 10;
-        top: 70px;
-        width: 100%;
-        left: -100%;
+        z-index: 98;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
         text-align: center;
-        transition: all .5s;
         background-color: black;
+        transform: translateX(-100%);
     }
 
-    nav ul li {
+    nav .menuList.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(0);
+        transition: all .5s ease;
+    }
+
+    nav .menuList li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
+        width: 100%;
     }
 
-    #sliding-menu:checked~ul {
-        left: 0;
-    }
-
-    .menu-btn {
-        padding-top: 40px;
-        line-height: 30px;
-        color: white;
-    }
     // END OF MEDIA QUERY FOR NAV //
 
     // START OF MEDIA QUERY FOR HOME PAGE //
@@ -364,7 +366,7 @@ section.gallery {
     .blogMain section article .commentImage {
         width: 400px;
         padding-right: 20px;
-    }fmax
+    }
 
     .blogMain .topInput {
         display: flex;
