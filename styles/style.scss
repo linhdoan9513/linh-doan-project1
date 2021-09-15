@@ -160,7 +160,6 @@ section.gallery {
         flex-grow: initial;
         width: calc(100% / 3 - 40px);
         padding: 0 20px;
-        border: 2px solid black;
     }
 
 
@@ -171,20 +170,6 @@ section.gallery {
         margin: 0;
         padding: 0;
     }
-
-    .left, 
-    .right {
-        z-index: 800;
-    }
-
-    .left {
-        transform: translateX(-100%);
-    }
-
-    .right {
-        transform: translateX(100%);
-    }
-
 }
 // END OF GALLERY SECTION //
 
@@ -210,7 +195,7 @@ section.gallery {
 
 .carouselImage {
     display: none;
-    z-index: 98;
+    z-index: 80;
     transition: transform .5s, opacity .5s,z-index .5s;
 }
 

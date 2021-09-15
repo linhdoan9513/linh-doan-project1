@@ -3249,7 +3249,6 @@ section.gallery img {
   flex-grow: initial;
   width: calc(100% / 3 - 40px);
   padding: 0 20px;
-  border: 2px solid black;
 }
 section.gallery .active {
   display: inline;
@@ -3257,16 +3256,6 @@ section.gallery .active {
   z-index: 900;
   margin: 0;
   padding: 0;
-}
-section.gallery .left,
-section.gallery .right {
-  z-index: 800;
-}
-section.gallery .left {
-  transform: translateX(-100%);
-}
-section.gallery .right {
-  transform: translateX(100%);
 }
 
 .carouselButton::after {
@@ -3290,7 +3279,7 @@ section.gallery .right {
 
 .carouselImage {
   display: none;
-  z-index: 98;
+  z-index: 80;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
 
