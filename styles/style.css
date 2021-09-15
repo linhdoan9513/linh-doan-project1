@@ -2008,6 +2008,7 @@ footer p {
   position: relative;
   top: -150px;
   z-index: 50;
+  padding: 0 30px 30px 30px;
 }
 .contactMain .wrapper .contactSection {
   width: 40%;
@@ -3238,16 +3239,59 @@ section.feature .featureContainer2 .containerText p {
 
 section.gallery {
   background-color: white;
-  padding: 100px 0;
+  padding: 100px 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
 }
 section.gallery img {
-  width: calc(100% / 3 - 30px);
+  flex-grow: initial;
+  width: calc(100% / 3 - 40px);
+  padding: 0 20px;
+  border: 2px solid black;
 }
-section.gallery img:nth-of-type(2) {
-  margin: 0 30px;
+section.gallery .active {
+  display: inline;
+  position: relative;
+  z-index: 900;
+  margin: 0;
+  padding: 0;
+}
+section.gallery .left,
+section.gallery .right {
+  z-index: 800;
+}
+section.gallery .left {
+  transform: translateX(-100%);
+}
+section.gallery .right {
+  transform: translateX(100%);
+}
+
+.carouselButton::after {
+  content: " ";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 0;
+  border-right: 5px solid #2C2C2C;
+  border-bottom: 5px solid #2C2C2C;
+  transform: translate(-50%, -50%) rotate(135deg);
+  z-index: 99;
+}
+
+.carouselRight::after {
+  position: absolute;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.carouselImage {
+  display: none;
+  z-index: 98;
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
 
 @media screen and (max-width: 940px) {

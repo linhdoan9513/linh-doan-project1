@@ -150,20 +150,70 @@ section.feature {
 // START OF GALLERY SECTION //
 section.gallery {
     background-color: white;
-    padding: 100px 0;
+    padding: 100px 50px;
     display: flex; 
     flex-direction: row; 
-    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
 
     img {
-        width: calc(100% / 3 - 30px);
+        flex-grow: initial;
+        width: calc(100% / 3 - 40px);
+        padding: 0 20px;
+        border: 2px solid black;
     }
 
-    img:nth-of-type(2) {
-        margin: 0 30px;
+
+    .active {
+        display: inline;
+        position: relative;
+        z-index: 900;
+        margin: 0;
+        padding: 0;
     }
+
+    .left, 
+    .right {
+        z-index: 800;
+    }
+
+    .left {
+        transform: translateX(-100%);
+    }
+
+    .right {
+        transform: translateX(100%);
+    }
+
 }
 // END OF GALLERY SECTION //
+
+//STYLING FOR CAROUSEL 
+.carouselButton::after {
+   content: " ";
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   top: 50%;
+   left: 0;
+   border-right: 5px solid $black;
+   border-bottom: 5px solid $black;
+   transform: translate(-50%, -50%) rotate(135deg);
+   z-index: 99;
+}
+
+.carouselRight::after {
+    position: absolute;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.carouselImage {
+    display: none;
+    z-index: 98;
+    transition: transform .5s, opacity .5s,z-index .5s;
+}
+
 
 @media screen and (max-width: 940px) {
     // START OF MEDIA QUERY FOR NAV //
