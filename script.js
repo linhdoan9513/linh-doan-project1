@@ -4,8 +4,8 @@ let hamburger = document.querySelector(".hamburger");
 let menu = document.querySelector(".menuList");
 
 hamburger.addEventListener("click", function () {
-  hamburger.classList.add("active");
-  menu.classList.add("active");
+  hamburger.classList.toggle("active");
+  menu.classList.toggle("active");
 });
 
 //Image Carousel
@@ -49,6 +49,7 @@ function moveButton() {
 
 setInitialClass();
 setEventListeners();
+
 // currentIndex = (currentIndex + 1) % 5;
 //given an index, show 3 images starting from an index:
 //- (index +1) % 5 and (index +2) % 5

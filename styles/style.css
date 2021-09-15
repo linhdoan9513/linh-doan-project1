@@ -3280,7 +3280,6 @@ section.gallery .active {
 .carouselImage {
   display: none;
   z-index: 80;
-  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
 
 @media screen and (max-width: 940px) {
@@ -3414,18 +3413,6 @@ section.feature .featureContainer2 .containerText {
   }
   section.feature .featureContainer1 div {
     width: 100%;
-  }
-
-  section.gallery {
-    display: flex;
-    flex-direction: column;
-  }
-  section.gallery img {
-    width: 80%;
-    margin: auto;
-  }
-  section.gallery img:nth-of-type(2) {
-    margin: 40px auto;
   }
 
   .blogMain section aside {

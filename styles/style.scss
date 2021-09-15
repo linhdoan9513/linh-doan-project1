@@ -196,7 +196,6 @@ section.gallery {
 .carouselImage {
     display: none;
     z-index: 80;
-    transition: transform .5s, opacity .5s,z-index .5s;
 }
 
 
@@ -372,19 +371,13 @@ section.gallery {
         }
     }
 
-    section.gallery {
-        display: flex;
-        flex-direction: column;
+    // section.gallery {
+    //     display: flex;
+    //     flex-direction: column;
 
-        img {
-            width: 80%;
-            margin: auto;
-        }
 
-        img:nth-of-type(2) {
-            margin: 40px auto;
-        }
-    }
+
+    // }
 
     // END OF MEDIA QUERY FOR HOME PAGE //
 
