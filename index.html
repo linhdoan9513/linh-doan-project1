@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
-    
     <title>Planted</title>
 </head>
 <body>
     <header class="homeHeader">
         <nav class="wrapper"> 
-            <input type="checkbox" id="sliding-menu">
-            <label for="sliding-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </div>
             <h1>Planted</h1>
-            <ul>
+            <ul class="menuList">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="index.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -90,13 +92,20 @@
             </div>
         </section>
         <section class="wrapper gallery">
-                <img src="./assets/gallery-image-1.jpg" alt="botanical garden">
-                <img src="./assets/gallery-image-2.jpg" alt="picture of multiple cactus plant">
-                <img src="./assets/gallery-image-3.jpg" alt="another picture of multiple cactus plant">
+            <div>
+                <div class="carouselButton carouselRight"></div>
+                <div class="carouselButton carouselLeft"></div>
+            </div>
+                <img class="carouselImage" src="./assets/gallery-image-1.jpg" alt="botanical garden">
+                <img class="carouselImage" src="./assets/gallery-image-2.jpg" alt="picture of multiple cactus plant">
+                <img class="carouselImage" src="./assets/gallery-image-3.jpg" alt="another picture of multiple cactus plant">
+                <img class="carouselImage" src="./assets/gallery-image-1.jpg" alt="botanical garden">
+                <img class="carouselImage" src="./assets/gallery-image-3.jpg" alt="another picture of multiple cactus plant">
         </section>
         <footer>
              <p>Copyright <i class="far fa-copyright"></i> 2019 HackerYou</p>
         </footer>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>

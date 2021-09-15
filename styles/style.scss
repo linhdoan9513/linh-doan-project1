@@ -150,58 +150,94 @@ section.feature {
 // START OF GALLERY SECTION //
 section.gallery {
     background-color: white;
-    padding: 100px 0;
+    padding: 100px 50px;
     display: flex; 
     flex-direction: row; 
-    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
 
     img {
-        width: calc(100% / 3 - 30px);
+        flex-grow: initial;
+        width: calc(100% / 3 - 40px);
+        padding: 0 20px;
     }
 
-    img:nth-of-type(2) {
-        margin: 0 30px;
+
+    .active {
+        display: inline;
+        position: relative;
+        z-index: 900;
+        margin: 0;
+        padding: 0;
     }
 }
 // END OF GALLERY SECTION //
 
+//STYLING FOR CAROUSEL 
+.carouselButton::after {
+   content: " ";
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   top: 50%;
+   left: 0;
+   border-right: 5px solid $black;
+   border-bottom: 5px solid $black;
+   transform: translate(-50%, -50%) rotate(135deg);
+   z-index: 99;
+}
+
+.carouselRight::after {
+    position: absolute;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.carouselImage {
+    display: none;
+    z-index: 80;
+}
+
+
 @media screen and (max-width: 940px) {
     // START OF MEDIA QUERY FOR NAV //
-    .menu-btn {
-        display: block;
-    }
 
     nav {
         display: block;
         height: 90px;
+
+        .hamburger {
+            display: block;
+        }
     }
 
-    nav ul {
+    nav .menuList {
         position: fixed;
-        z-index: 10;
-        top: 70px;
-        width: 100%;
-        left: -100%;
+        z-index: 98;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
         text-align: center;
-        transition: all .5s;
         background-color: black;
+        transform: translateX(-100%);
     }
 
-    nav ul li {
+    nav .menuList.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(0);
+        transition: all .5s ease;
+    }
+
+    nav .menuList li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
+        width: 100%;
     }
 
-    #sliding-menu:checked~ul {
-        left: 0;
-    }
-
-    .menu-btn {
-        padding-top: 40px;
-        line-height: 30px;
-        color: white;
-    }
     // END OF MEDIA QUERY FOR NAV //
 
     // START OF MEDIA QUERY FOR HOME PAGE //
@@ -335,19 +371,13 @@ section.gallery {
         }
     }
 
-    section.gallery {
-        display: flex;
-        flex-direction: column;
+    // section.gallery {
+    //     display: flex;
+    //     flex-direction: column;
 
-        img {
-            width: 80%;
-            margin: auto;
-        }
 
-        img:nth-of-type(2) {
-            margin: 40px auto;
-        }
-    }
+
+    // }
 
     // END OF MEDIA QUERY FOR HOME PAGE //
 
@@ -364,7 +394,7 @@ section.gallery {
     .blogMain section article .commentImage {
         width: 400px;
         padding-right: 20px;
-    }fmax
+    }
 
     .blogMain .topInput {
         display: flex;
